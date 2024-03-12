@@ -26,7 +26,7 @@
     "analyze": "size-limit --why"
   },
   "dependencies": {
-    "@baseswapfi/sdk-core": "^1.0.44",
+    "@baseswapfi/sdk-core": "^1.0.45",
     "@baseswapfi/v2-sdk": "^1.0.26",
     "@baseswapfi/v3-sdk2": "^3.10.24",
     "@uniswap/swap-router-contracts": "1.1.0",
