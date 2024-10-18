@@ -1,6 +1,6 @@
 {
   "name": "@baseswapfi/router-sdk",
-  "version": "1.0.32",
+  "version": "1.2.1",
   "author": "@Uniswap",
   "module": "dist/router-sdk.esm.js",
   "license": "MIT",
@@ -21,20 +21,21 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
   "dependencies": {
-    "@baseswapfi/sdk-core": "^1.0.44",
-    "@baseswapfi/v2-sdk": "^1.0.26",
-    "@baseswapfi/v3-sdk2": "^3.10.24",
+    "@baseswapfi/sdk-core": "^1.3.12",
+    "@baseswapfi/v2-sdk": "^1.2.4",
+    "@baseswapfi/v3-sdk2": "^3.11.8",
     "@uniswap/swap-router-contracts": "1.1.0",
     "jsbi": "^3.1.4"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.2.6",
     "husky": "^8.0.3",
+    "prettier": "^2.3.1",
     "size-limit": "^8.2.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
@@ -44,12 +45,6 @@
     "hooks": {
       "pre-commit": "tsdx lint"
     }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
   },
   "size-limit": [
     {
